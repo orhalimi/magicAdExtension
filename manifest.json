@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "magicAd onclick",
+    "description": "magicAd extention",
+    "version": "1",
+    "version_name": "1",
+    "permissions": [ "history","activeTab"],
+    "content_scripts":[
+        {
+            "matches": ["<all_urls>"],
+            "run_at": "document_idle",
+            "js": ["contentscript.js"]
+        }
+    ],
+    "author": "Or Halimi"
+}
