@@ -3,7 +3,7 @@ import app from './app';
 import mongoose from 'mongoose';
 
 const PORT = process.env.PORT || '3000';
-const DB_URL = process.env.DB_URL || 'mongodb://localhost:27017/magicAd'
+const DB_URL = process.env.DB_URL || 'mongodb://mongo:27017/magicAd'
 
 const connectDb = () => {
   console.log(`Connectiong to MongoDB at ${DB_URL}`);
